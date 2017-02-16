@@ -1,0 +1,122 @@
+html {
+  font-family:'Roboto';
+  font-weight: 300;
+  font-size: 1.15rem;
+}
+
+/*---------------------------------------------------*/
+/*----------------- Top Picture  --------------------*/
+/*---------------------------------------------------*/
+
+.top_background_image {
+  height: 15vh;
+  background:url(../images/cheers-logo.png) center center no-repeat;
+  background-size: contain;
+  margin-top: 2%;
+}
+
+/*---------------------------------------------------*/
+/*-------------------- General ----------------------*/
+/*---------------------------------------------------*/
+
+.container {
+  width: 85%;
+  margin: auto;
+  margin-bottom: 2%;
+}
+
+/*---------------------------------------------------*/
+/*-------------------- Header -----------------------*/
+/*---------------------------------------------------*/
+
+header md-input-container {
+  width: 49%;
+}
+header md-input-container:first-child {
+  margin-bottom: -7px;
+}
+header md-input-container input,
+header md-input-container select {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*---------------------------------------------------*/
+/*-------------------- Cards ------------------------*/
+/*---------------------------------------------------*/
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  margin: 1% 0;
+}
+.card__img {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+  background-image: url(https://www.colourbox.de/preview/1623679-brown-wood-background-textured-pattern-plank-wall.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.card__img img {
+  height: 25vh;
+}
+.card__info {
+  width: 80%;
+}
+.card__info--header {
+  background-color: #c4881c;
+  color: #fff;
+  display: flex;
+  padding: 2%;
+}
+.card__info--header-name {
+  flex: 3;
+}
+.card__info--header h2,
+.card__info--header p {
+  margin: 0;
+}
+.card__info--header h2 {
+  font-weight: 400;
+  font-size: 1.35rem;
+}
+.card__info--abv {
+  margin-top: 2px;
+  color: #fff;
+}
+.card__info--beerInfo {
+  padding: 2%;
+}
+.card__info--beerInfo p {
+  margin: 1% 0;
+  font-size: 0.95rem;
+}
+
+/*-------------------------------------------------*/
+/*----------------- Responsive --------------------*/
+/*-------------------------------------------------*/
+
+@media screen and (max-width: 740px) {
+  html {
+    font-size: 0.95rem;
+  }
+  .container {
+    width: 95%;
+  }
+  header md-input-container {
+    width: 47%;
+  }
+  .card__img {
+    display: none;
+  }
+  .card__info {
+    width: 100%;
+  }
+}
