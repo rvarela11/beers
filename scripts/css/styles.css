@@ -8,7 +8,7 @@ html {
 /*----------------- Top Picture  --------------------*/
 /*---------------------------------------------------*/
 
-.top_background_image {
+.top-background-image {
   height: 15vh;
   background:url(../images/cheers-logo.png) center center no-repeat;
   background-size: contain;
@@ -70,31 +70,31 @@ header md-input-container select {
 .card__info {
   width: 80%;
 }
-.card__info--header {
+.card__info-header {
   background-color: #c4881c;
   color: #fff;
   display: flex;
   padding: 2%;
 }
-.card__info--header-name {
+.card__info-header-name {
   flex: 3;
 }
-.card__info--header h2,
-.card__info--header p {
+.card__info-header h2,
+.card__info-header p {
   margin: 0;
 }
-.card__info--header h2 {
+.card__info-header h2 {
   font-weight: 400;
   font-size: 1.35rem;
 }
-.card__info--abv {
+.card__info-abv {
   margin-top: 2px;
   color: #fff;
 }
-.card__info--beerInfo {
+.card__info-beerInfo {
   padding: 2%;
 }
-.card__info--beerInfo p {
+.card__info-beerInfo p {
   margin: 1% 0;
   font-size: 0.95rem;
 }

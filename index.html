@@ -21,7 +21,7 @@
 	</head>
 
 	<body>
-		<div class="top_background_image"></div>
+		<div class="top-background-image"></div>
 		<div ng-controller="DemoCtrl" class="container">
 
 			<header>
@@ -40,27 +40,28 @@
 	      </md-input-container>
 			</header>
 
-			<section>
+			<article>
 				<div ng-repeat="data in view.results | orderBy: option | filter: search" class="card">
 					<div class="card__img">
 						<img ng-src="{{data.image_url}}"/>
 					</div>
 					<div class="card__info">
-						<div class="card__info--header">
-							<div class="card__info--header-name">
+						<div class="card__info-header">
+							<div class="card__info-header-name">
 								<h2>{{data.name}}</h2>
 								<p>{{data.tagline}}</p>
 							</div>
-							<div class="card__info--header-abv">
-								<h4 class="card__info--abv">ABV: {{data.abv}}</h4>
+							<div class="card__info-header-abv">
+								<h4 class="card__info-abv">ABV: {{data.abv}}</h4>
 							</div>
 						</div>
-						<div class="card__info--beerInfo">
+						<div class="card__info-beerInfo">
 							<p>{{data.description}}</p>
 						</div>
 					</div>
 				</div>
-			</section>
+			</article>
+
 		</div>
 	</body>
 

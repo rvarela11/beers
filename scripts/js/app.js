@@ -3,8 +3,6 @@ var app = angular.module('webapp', ['ngMaterial', 'ngMessages', 'ngResource']);
   app.controller('DemoCtrl', ['$scope', '$http', function($scope, $http, $resource) {
 
     $scope.view = {};
-      // use $http or $resource
-      // https://api.punkapi.com/v2/beers
 
     $http({
       method: 'GET',
